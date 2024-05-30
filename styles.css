@@ -86,10 +86,9 @@ ul a:hover{
 }
 #active{
     color:#ffb20d;
-    text-decoration: underline;
-    text-decoration-color: #fff;
-    text-decoration-thickness:.2rem;
-    text-underline-offset:.6rem;
+}
+#active:hover{
+    text-decoration: none;
 }
 h1, h2 {
      font-family: 'Dancing Script', cursive;
