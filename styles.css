@@ -141,7 +141,7 @@ h1 a{
     background-blend-mode: multiply;
     color: #fff;
     flex-direction: column;
-    background-color: #0c0c0c4f;
+    background-color: #0c0c0ca2;
     
 }
 .hero-box  p{
@@ -159,13 +159,14 @@ h1 a{
         background-image: url(images/hero\ 3.jpeg);
     }
 }
-@media(max-width:700px){
+@media(max-width:667px){
     .hero-box{
         background-image: url(images/hero\ 2.jpg);
         text-align: center;
         justify-content: center;
         align-items: center;
-        padding:0;
+        padding:3rem;
+        text-rendering: optimizeLegibility;
     }
 }
 
