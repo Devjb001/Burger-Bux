@@ -11,6 +11,7 @@
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 img{
     max-width: 100%;
@@ -19,6 +20,7 @@ body{
     font-family: "Open Sans", sans-serif;
     color: #0c0c0c;
     background-color: #ffffff;
+    overflow-x: hidden;
 }
 
 header{
@@ -27,7 +29,9 @@ header{
     align-items: center;
     padding:2rem;
     background-color: #222831;
-    position: sticky;
+    position:fixed;
+    left: 0;
+    right: 0;
     top:0;
     z-index: 10;
     box-shadow: .2rem .2rem 1rem rgba(255, 255, 255, 0.2);
@@ -108,21 +112,48 @@ h1 a{
 
 @media(max-width:1200px){
     nav ul{
-        display: none;
+        position: absolute;
+        flex-direction: column;
+        top: 75px;
+        right: 0;
+        background-color:#222831;
+        width: 300px;
+        gap: 0;
+        border-bottom-left-radius: 10px;
+        overflow: hidden;
+        transition:  1s linear all;
+    }
+    nav ul li{
+        padding: 20px;
+    }
+    nav ul li a:hover{
+        background-color: #f0a608;
+        border-radius: 10px;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 15px;
+
+    }
+    #active, #active a{
+        background-color: #f0a608;
+        color: #fff;
+        padding: 10px 15px;
+        border-radius: 10px;
     }
     #bars{
         display: block;
     }
 
 }
-@media(max-width:700px){
+@media(max-width:767px){
     .icons{
         display: none;
     }
-    #bars{
-        display: block;
+    nav ul{
+        width: 100%;
     }
-   
+
+
 }
 
 /*/ ///////---HERO-SECTION----//////*/
@@ -755,8 +786,8 @@ h1 a{
     display: flex;
     align-items: center;
     justify-content:space-evenly;
-    padding-top: 5rem;
-    padding-bottom:1rem;
+    flex-wrap: wrap;
+    padding-top: 5rem 3rem 2rem;
   }
   .footer-wrapper h1{
     font-size: 4rem;
@@ -768,4 +799,11 @@ h1 a{
     line-height: 2.3rem;
     margin-bottom: 2rem;
  
+  }
+  @media screen and (max-width: 767px){
+    .footer-wrappe{
+        flex-direction: column;
+        flex-flow: column;
+        padding-inline: 3rem;
+    }
   }
