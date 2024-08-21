@@ -1,6 +1,7 @@
 let hamburger = document.querySelector('#bars');
 let cancelX = document.querySelector('#cancel');
 let menuList = document.querySelector('#menuList');
+let navLinks = document.querySelectorAll('.li')
 
 console.log('Elements:', hamburger, cancelX, menuList);
 
@@ -17,3 +18,11 @@ hamburger.addEventListener("click", () => {
     cancelX.classList.remove("show"); // Remove the class to hide the X icon
   });
   
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      menuList.classList.remove("active");
+      hamburger.classList.remove("hidden");
+      cancelX.classList.remove("show");
+    });
+  });
