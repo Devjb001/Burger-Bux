@@ -104,24 +104,45 @@ h1 a{
     color: #fff;
     
 }
-#bars{
-    font-size:2.5rem;
-    color: #fff;
-    display:none;
+.toggle-icons{
+   height: 30px;
+   width: 30px;
+   display: flex;
+   align-items:center;
+   justify-content: center;
+   border: 1px solid gray;
+   position: relative;
+   display: none;
+}
+.toggle-icons i{
+   font-size: 2rem;
+   color: #fff;
+   position: absolute;
+   top: 5px;
+   left: 5px;
+   right: 5px;
+   bottom: 5px;
+   transition: all 1s ease;
+}
+.toggle-icons #cancel{
+    display: none;
 }
 
 @media(max-width:1200px){
-    nav ul{
+    .toggle-icons{
+        display: block;
+    }
+    nav #menuList{
         position: absolute;
         flex-direction: column;
         top: 75px;
-        right: 0;
+        left:-100%;
         background-color:#222831;
-        width: 300px;
+        width: 400px;
         gap: 0;
-        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
         overflow: hidden;
-        transition:  1s linear all;
+        transition:all 1s ease;
     }
     nav ul li{
         padding: 20px;
@@ -145,11 +166,20 @@ h1 a{
     }
 
 }
+#menuList.active{
+    left: 0;
+}
+#bars.hidden {
+    display: none;
+  }
+  #cancel.show {
+    display: block;
+  }
 @media(max-width:767px){
     .icons{
         display: none;
     }
-    nav ul{
+    nav #menuList{
         width: 100%;
     }
 
