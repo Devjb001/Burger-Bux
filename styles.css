@@ -22,7 +22,7 @@ body{
     background-color: #ffffff;
     overflow-x: hidden;
 }
-
+/* header */
 header{
     display: flex;
     justify-content: space-around;
@@ -105,8 +105,8 @@ h1 a{
     
 }
 .toggle-icons{
-   height: 30px;
-   width: 30px;
+   height: 35px;
+   width: 40px;
    display: flex;
    align-items:center;
    justify-content: center;
@@ -115,11 +115,11 @@ h1 a{
    display: none;
 }
 .toggle-icons i{
-   font-size: 2rem;
+   font-size: 2.5rem;
    color: #fff;
    position: absolute;
    top: 5px;
-   left: 5px;
+   left: 7px;
    right: 5px;
    bottom: 5px;
    transition: all 1s ease;
@@ -183,9 +183,9 @@ h1 a{
     .icons{
         display: none;
     }
-    nav #menuList{
-        /* width: 100%; */
-    }
+    /* nav #menuList{
+        width: 100%;
+    } */
 
 
 }
@@ -601,7 +601,7 @@ h1 a{
     padding-top:7rem;
     flex-direction: column;
     border-radius: 1rem;
-    transition: 2s linear;
+    transition: 1s ease;
 }
 .grid-container .card:hover  .content{
     right: 0;
