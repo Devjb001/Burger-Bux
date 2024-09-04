@@ -815,7 +815,7 @@ h1 a{
 /*----------FOOTER----------*/
   
   .footer{
-    min-height:50vh;
+    min-height:35vh;
     width: 100%;
     background-color: #222831;
     text-align: center;
@@ -832,7 +832,11 @@ h1 a{
     justify-content:center;
     gap: 2rem;
     flex-wrap: wrap;
-    padding-top: 5rem 3rem 2rem;
+  }
+  .footer-wrapper > div{
+    width: 400px;
+    height: 30vh;
+    background-color: red;
   }
   .footer-wrapper h1{
     font-size: 4rem;
