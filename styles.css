@@ -564,11 +564,10 @@ h1 a{
 
 /*//////GRID SECTION START//---///*/
 .grid{
-    min-height: 100vh;
+    min-height:100vh;
     width:90%;
     margin: auto; 
     text-align: center;
-    background-color: red;
 }
 .grid-container{
     height: 100%;
