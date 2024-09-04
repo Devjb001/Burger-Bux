@@ -699,7 +699,7 @@ h1 a{
     line-height: 2.2rem;
 }
 
-@media(max-width:800px){
+@media(max-width:1200px){
     .about .wrapper{
         flex-direction: column-reverse;
     }
@@ -784,8 +784,8 @@ h1 a{
 
   .booking{
     width: 85%;
-    margin: auto;
-    min-height: 100vh;
+    margin:10px auto;
+    height:500px;
     display: flex;
     justify-content:center;
     align-items: center;
@@ -829,7 +829,8 @@ h1 a{
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content:space-evenly;
+    justify-content:center;
+    gap: 2rem;
     flex-wrap: wrap;
     padding-top: 5rem 3rem 2rem;
   }
@@ -844,7 +845,7 @@ h1 a{
     margin-bottom: 2rem;
  
   }
-  @media screen and (max-width: 767px){
+  @media(max-width: 768px){
     .footer-wrappe{
         flex-direction: column;
         flex-flow: column;
