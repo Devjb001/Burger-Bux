@@ -26,10 +26,3 @@ hamburger.addEventListener("click", () => {
       cancelX.classList.remove("show");
     });
   });
-
-
-  if(MyMoneyIsAboutToFinish){
-    AccountBalance ++;
-    CreditAlert ++;
-    MyMoneyIsAboutToFinish = false;
-  }
